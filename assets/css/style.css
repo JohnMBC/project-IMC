@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+:root {
+    --primary-color: #f4f8fa;
+    --secundary-color: #bfc6c0;
+    --tertiary-color: #b8f34b;
+    --primary-color-darker:#940c0c;
+}
+
+/*variável Global*/
+* {
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.0em;
+    line-height: 1.2em;
+
+
+
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    /*distância do topo e parte de baixo automatatica*/
+    /*conteúdo no meio da página */
+    background: var(--secundary-color);
+    padding: 20px;
+    border-radius: 10px; /*arredondando os cantos*/
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%; /*largura da pagina*/
+    margin-bottom: 10px;/*espaço entre eles*/
+    border-radius: 10px;
+}
+form input{
+    font-size: 24px;
+    height: 50px; /*altura*/
+    padding: 0 20px; /*lateral*/
+}
+form input:focus{ /*mudar a cor da borda outline*/
+    outline:1px solid var(--tertiary-color) ;
+
+}
+form button{
+    border: none; /*tirar a bordar*/
+
+   background: var(--tertiary-color); /*colocar fundo*/
+   color: #000000;
+   font-size: 18px;
+   font-weight: 700;
+   height: 50px;
+   cursor:pointer;
+   margin-top: 30px;
+}
+form button :hover {
+
+    background:var(--primary-color-darker);
+}
+
+form button:active {
+    background:#c4e2e8;
+}
+.paragrafo-resultado, .bad{
+    background: #92ec81;
+    padding: 10px 20px;
+}
+.bad {
+
+    background:#c75454 ;
+}
